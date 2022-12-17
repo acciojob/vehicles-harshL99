@@ -40,5 +40,8 @@ public class F1 extends Car {
             else setGears(6);
             changeSpeed(newSpeed, getCurrentDirection());
         }
+        if(newSpeed < 0){
+            changeSpeed(0,getCurrentDirection());
+        }
     }
 }
